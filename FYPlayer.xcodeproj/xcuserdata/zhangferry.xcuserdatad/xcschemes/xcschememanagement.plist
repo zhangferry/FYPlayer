@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FYBundle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>FYPlayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8E1BD0421F1609E700DF46D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8EA5CBCC1F0F713F0097A69F</key>
 		<dict>
 			<key>primary</key>

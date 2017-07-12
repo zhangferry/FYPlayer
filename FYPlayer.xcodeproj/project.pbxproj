@@ -17,6 +17,19 @@
 		8E1BD03C1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD02F1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		8E1BD03D1F16021800DF46D0 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0311F16021800DF46D0 /* View+MASAdditions.m */; };
 		8E1BD03E1F16021800DF46D0 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0341F16021800DF46D0 /* ViewController+MASAdditions.m */; };
+		8E1BD0541F160AC800DF46D0 /* FYPlayer_bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */; };
+		8E1BD0551F160AC800DF46D0 /* FYPlayer_fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */; };
+		8E1BD0561F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04B1F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png */; };
+		8E1BD0571F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04C1F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png */; };
+		8E1BD0581F160AC800DF46D0 /* FYPlayer_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04D1F160AC800DF46D0 /* FYPlayer_pause.png */; };
+		8E1BD0591F160AC800DF46D0 /* FYPlayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04E1F160AC800DF46D0 /* FYPlayer_pause@2x.png */; };
+		8E1BD05A1F160AC800DF46D0 /* FYPlayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04F1F160AC800DF46D0 /* FYPlayer_pause@3x.png */; };
+		8E1BD05B1F160AC800DF46D0 /* FYPlayer_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0501F160AC800DF46D0 /* FYPlayer_play.png */; };
+		8E1BD05C1F160AC800DF46D0 /* FYPlayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */; };
+		8E1BD05D1F160AC800DF46D0 /* FYPlayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */; };
+		8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */; };
+		8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */; };
 		8EA5CBD21F0F713F0097A69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD11F0F713F0097A69F /* main.m */; };
 		8EA5CBD51F0F713F0097A69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD41F0F713F0097A69F /* AppDelegate.m */; };
 		8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */; };
@@ -29,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8E1BD0921F16225100DF46D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EA5CBC51F0F713F0097A69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E1BD0421F1609E700DF46D0;
+			remoteInfo = FYBundle;
+		};
 		8EA5CBE71F0F713F0097A69F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8EA5CBC51F0F713F0097A69F /* Project object */;
@@ -37,6 +57,20 @@
 			remoteInfo = FYPlayer;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E1BD0951F1622F500DF46D0 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E1BD01C1F16021800DF46D0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -64,6 +98,20 @@
 		8E1BD0321F16021800DF46D0 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		8E1BD0331F16021800DF46D0 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		8E1BD0341F16021800DF46D0 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1BD0451F1609E700DF46D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_bottom_shadow.png; sourceTree = "<group>"; };
+		8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_fullscreen.png; sourceTree = "<group>"; };
+		8E1BD04B1F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_fullscreen@2x.png"; sourceTree = "<group>"; };
+		8E1BD04C1F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_fullscreen@3x.png"; sourceTree = "<group>"; };
+		8E1BD04D1F160AC800DF46D0 /* FYPlayer_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_pause.png; sourceTree = "<group>"; };
+		8E1BD04E1F160AC800DF46D0 /* FYPlayer_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_pause@2x.png"; sourceTree = "<group>"; };
+		8E1BD04F1F160AC800DF46D0 /* FYPlayer_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_pause@3x.png"; sourceTree = "<group>"; };
+		8E1BD0501F160AC800DF46D0 /* FYPlayer_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_play.png; sourceTree = "<group>"; };
+		8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@2x.png"; sourceTree = "<group>"; };
+		8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@3x.png"; sourceTree = "<group>"; };
+		8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_top_shadow.png; sourceTree = "<group>"; };
+		8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FYPlayer.bundle; sourceTree = "<group>"; };
 		8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA5CBD11F0F713F0097A69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EA5CBD31F0F713F0097A69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +134,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E1BD0401F1609E700DF46D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EA5CBCA1F0F713F0097A69F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,11 +190,31 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		8E1BD0441F1609E700DF46D0 /* FYBundle */ = {
+			isa = PBXGroup;
+			children = (
+				8E1BD0451F1609E700DF46D0 /* Info.plist */,
+				8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */,
+				8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */,
+				8E1BD04B1F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png */,
+				8E1BD04C1F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png */,
+				8E1BD04D1F160AC800DF46D0 /* FYPlayer_pause.png */,
+				8E1BD04E1F160AC800DF46D0 /* FYPlayer_pause@2x.png */,
+				8E1BD04F1F160AC800DF46D0 /* FYPlayer_pause@3x.png */,
+				8E1BD0501F160AC800DF46D0 /* FYPlayer_play.png */,
+				8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */,
+				8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */,
+				8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */,
+			);
+			path = FYBundle;
+			sourceTree = "<group>";
+		};
 		8EA5CBC41F0F713F0097A69F = {
 			isa = PBXGroup;
 			children = (
 				8EA5CBCF1F0F713F0097A69F /* FYPlayer */,
 				8EA5CBE91F0F713F0097A69F /* FYPlayerTests */,
+				8E1BD0441F1609E700DF46D0 /* FYBundle */,
 				8EA5CBCE1F0F713F0097A69F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +224,7 @@
 			children = (
 				8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */,
 				8EA5CBE61F0F713F0097A69F /* FYPlayerTests.xctest */,
+				8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +232,7 @@
 		8EA5CBCF1F0F713F0097A69F /* FYPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */,
 				8E1BD01B1F16021800DF46D0 /* Masonry */,
 				8EA5CBD31F0F713F0097A69F /* AppDelegate.h */,
 				8EA5CBD41F0F713F0097A69F /* AppDelegate.m */,
@@ -204,6 +281,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E1BD0421F1609E700DF46D0 /* FYBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1BD0481F1609E700DF46D0 /* Build configuration list for PBXNativeTarget "FYBundle" */;
+			buildPhases = (
+				8E1BD03F1F1609E700DF46D0 /* Sources */,
+				8E1BD0401F1609E700DF46D0 /* Frameworks */,
+				8E1BD0411F1609E700DF46D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FYBundle;
+			productName = FYBundle;
+			productReference = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8EA5CBCC1F0F713F0097A69F /* FYPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA5CBEF1F0F713F0097A69F /* Build configuration list for PBXNativeTarget "FYPlayer" */;
@@ -211,10 +305,12 @@
 				8EA5CBC91F0F713F0097A69F /* Sources */,
 				8EA5CBCA1F0F713F0097A69F /* Frameworks */,
 				8EA5CBCB1F0F713F0097A69F /* Resources */,
+				8E1BD0951F1622F500DF46D0 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8E1BD0931F16225100DF46D0 /* PBXTargetDependency */,
 			);
 			name = FYPlayer;
 			productName = FYPlayer;
@@ -248,6 +344,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zhangferry;
 				TargetAttributes = {
+					8E1BD0421F1609E700DF46D0 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					8EA5CBCC1F0F713F0097A69F = {
 						CreatedOnToolsVersion = 8.3.1;
 						ProvisioningStyle = Automatic;
@@ -274,17 +374,37 @@
 			targets = (
 				8EA5CBCC1F0F713F0097A69F /* FYPlayer */,
 				8EA5CBE51F0F713F0097A69F /* FYPlayerTests */,
+				8E1BD0421F1609E700DF46D0 /* FYBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E1BD0411F1609E700DF46D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1BD0551F160AC800DF46D0 /* FYPlayer_fullscreen.png in Resources */,
+				8E1BD05D1F160AC800DF46D0 /* FYPlayer_play@3x.png in Resources */,
+				8E1BD05C1F160AC800DF46D0 /* FYPlayer_play@2x.png in Resources */,
+				8E1BD0581F160AC800DF46D0 /* FYPlayer_pause.png in Resources */,
+				8E1BD05A1F160AC800DF46D0 /* FYPlayer_pause@3x.png in Resources */,
+				8E1BD0561F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png in Resources */,
+				8E1BD0591F160AC800DF46D0 /* FYPlayer_pause@2x.png in Resources */,
+				8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */,
+				8E1BD05B1F160AC800DF46D0 /* FYPlayer_play.png in Resources */,
+				8E1BD0571F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png in Resources */,
+				8E1BD0541F160AC800DF46D0 /* FYPlayer_bottom_shadow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EA5CBCB1F0F713F0097A69F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */,
 				8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */,
+				8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +418,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E1BD03F1F1609E700DF46D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EA5CBC91F0F713F0097A69F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +459,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8E1BD0931F16225100DF46D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E1BD0421F1609E700DF46D0 /* FYBundle */;
+			targetProxy = 8E1BD0921F16225100DF46D0 /* PBXContainerItemProxy */;
+		};
 		8EA5CBE81F0F713F0097A69F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8EA5CBCC1F0F713F0097A69F /* FYPlayer */;
@@ -351,6 +483,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E1BD0461F1609E700DF46D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = FYBundle/Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8E1BD0471F1609E700DF46D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				INFOPLIST_FILE = FYBundle/Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		8EA5CBED1F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,7 +611,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = FYPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +624,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				INFOPLIST_FILE = FYPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +660,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E1BD0481F1609E700DF46D0 /* Build configuration list for PBXNativeTarget "FYBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1BD0461F1609E700DF46D0 /* Debug */,
+				8E1BD0471F1609E700DF46D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8EA5CBC81F0F713F0097A69F /* Build configuration list for PBXProject "FYPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

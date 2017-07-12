@@ -44,6 +44,10 @@
  */
 - (void)addPlayerToFatherView:(UIView *)view{
     [view addSubview:self];
+    [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_offset(UIEdgeInsetsZero);
+    }];
+    
     if (!_controlView) {
         _controlView = [[FYPlayerControlView alloc] init];
         [self addSubview:_controlView];
@@ -53,9 +57,7 @@
         }];
     }
    
-    [self mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_offset(UIEdgeInsetsZero);
-    }];
+    
     
 }
 
@@ -84,7 +86,7 @@
     
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     //要把playerlayer加到视图layer之上
-    [self.layer addSublayer:self.playerLayer];
+    [self.layer insertSublayer:self.playerLayer atIndex:0];
     
     [self addPlayerItemObserVer];
 }

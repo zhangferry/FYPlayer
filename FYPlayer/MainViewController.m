@@ -22,6 +22,8 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"FYBundle" ofType:@"bundle"];
+    
     UIView *videoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenWidth * 9/16)];
     videoView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:videoView];
