@@ -39,11 +39,11 @@
         [self addSubview:self.topImageView];
         [self.topImageView addSubview:self.titleLabel];
         
-        [self addSubview:self.startBtn];
         [self addSubview:self.bottomImageView];
         [self.bottomImageView addSubview:self.currentTimeLabel];
         [self.bottomImageView addSubview:self.totalTimeLabel];
         [self.bottomImageView addSubview:self.fullScreenBtn];
+        [self.bottomImageView addSubview:self.startBtn];
         //添加子控件约束
         [self makeSubViewConstraints];
     }
@@ -103,7 +103,10 @@
  点击播放按钮
  */
 - (void)playBtnClick:(UIButton *)sender{
-    
+    sender.selected = !sender.selected;
+    if ([self.delegate respondsToSelector:@selector(fy_playerPauseAction)]) {
+        [self.delegate fy_playerPauseAction];
+    }
 }
 
 
@@ -111,7 +114,14 @@
  点击全屏按钮
  */
 - (void)fullScreenBtnClick:(UIButton *)sender{
-    
+    sender.selected = !sender.selected;
+    if ([self.delegate respondsToSelector:@selector(fy_playerFullScreenAction)]) {
+        [self.delegate fy_playerFullScreenAction];
+    }
+}
+
+- (void)fy_playerPlayingState:(BOOL)state{
+    self.startBtn.selected = state;
 }
 
 #pragma mark - getter

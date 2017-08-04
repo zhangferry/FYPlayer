@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol FYPlayerControlViewDelegate <NSObject>
+
+- (void)fy_playerFullScreenAction;
+
+- (void)fy_playerPauseAction;
+
+@end
+
 @interface FYPlayerControlView : UIView
+
+@property (nonatomic, weak) id<FYPlayerControlViewDelegate> delegate;
+
+- (void)fy_playerPlayingState:(BOOL)state;
 
 @end

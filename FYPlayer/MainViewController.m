@@ -25,7 +25,7 @@
     //NSString *path = [[NSBundle mainBundle] pathForResource:@"FYBundle" ofType:@"bundle"];
     
     UIView *videoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenWidth * 9/16)];
-    videoView.backgroundColor = [UIColor blackColor];
+    videoView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:videoView];
     
     self.playerView = [[FYPlayerView alloc] init];
@@ -36,6 +36,14 @@
     
     [self.playerView playerWithView:videoView videoModel:videoModel];
     //[self.playerView play];
+}
+
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {
