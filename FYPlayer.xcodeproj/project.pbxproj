@@ -30,6 +30,7 @@
 		8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */; };
 		8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */; };
+		8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C335D1F38415200BBF938 /* FYSlider.m */; };
 		8EA5CBD21F0F713F0097A69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD11F0F713F0097A69F /* main.m */; };
 		8EA5CBD51F0F713F0097A69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD41F0F713F0097A69F /* AppDelegate.m */; };
 		8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */; };
@@ -112,6 +113,8 @@
 		8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@3x.png"; sourceTree = "<group>"; };
 		8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_top_shadow.png; sourceTree = "<group>"; };
 		8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FYPlayer.bundle; sourceTree = "<group>"; };
+		8E6C335C1F38415200BBF938 /* FYSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSlider.h; sourceTree = "<group>"; };
+		8E6C335D1F38415200BBF938 /* FYSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSlider.m; sourceTree = "<group>"; };
 		8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA5CBD11F0F713F0097A69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EA5CBD31F0F713F0097A69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				8EA5CBFA1F0F71C60097A69F /* FYPlayerView.m */,
 				8EA5CBFC1F0F71D80097A69F /* FYPlayerControlView.h */,
 				8EA5CBFD1F0F71D80097A69F /* FYPlayerControlView.m */,
+				8E6C335C1F38415200BBF938 /* FYSlider.h */,
+				8E6C335D1F38415200BBF938 /* FYSlider.m */,
 			);
 			path = FYPlayer;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				8E1BD0371F16021800DF46D0 /* MASConstraintMaker.m in Sources */,
 				8EA5CC011F0F720A0097A69F /* FYVideoModel.m in Sources */,
 				8EA5CBF71F0F71880097A69F /* MainViewController.m in Sources */,
+				8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */,
 				8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

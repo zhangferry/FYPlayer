@@ -17,6 +17,7 @@
 @property (nonatomic, strong) AVPlayerLayer       *playerLayer;
 @property (nonatomic, strong) AVPlayerItem        *playerItem;
 @property (nonatomic, strong) AVURLAsset          *urlAsset;
+@property (nonatomic, strong) id                  timeObserve;
 
 @property (nonatomic, strong) FYVideoModel        *videoModel;
 @property (nonatomic, strong) FYPlayerControlView *controlView;
@@ -87,7 +88,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onDeviceOrientationChange) name:UIDeviceOrientationDidChangeNotification object:nil];
     //状态栏方向变化
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStateBarOrientationChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
-    
+    //播放完成
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerMovieFinish:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
 }
 
@@ -135,6 +136,35 @@
     [self addPlayerItemObserVer];
     
     [self addNotification];
+    //添加计时器
+    [self addTimeObserve];
+}
+
+- (void)resetPlayer{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    //移除监听
+    if (self.timeObserve) {
+        [self.player removeTimeObserver:self.timeObserve];
+        self.timeObserve = nil;
+    }
+}
+
+/**
+ 添加计时器
+ */
+- (void)addTimeObserve{
+    __weak __typeof(self) WeakSelf = self;
+    
+    self.timeObserve = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:nil usingBlock:^(CMTime time) {
+        
+        AVPlayerItem *item = WeakSelf.playerItem;
+        //两种方式求绝对时间
+        NSInteger currentTime = item.currentTime.value/item.currentTime.timescale;
+        NSInteger totalTime   = (NSInteger)CMTimeGetSeconds(item.duration);
+        CGFloat value = CMTimeGetSeconds(item.currentTime)/CMTimeGetSeconds(item.duration);
+        [WeakSelf.controlView fy_playerCurrentTime:currentTime totalTime:totalTime value:value];
+    }];
 }
 
 /**
@@ -209,6 +239,27 @@
         [self pause];
     }else if (self.state == FYPlayerStatePause){
         [self play];
+    }
+    
+}
+
+- (void)fy_playerDraggedSlider:(CGFloat)value{
+    
+    NSInteger drageSecond = CMTimeGetSeconds(self.playerItem.duration)*value;
+    [self seekToTime:drageSecond completionHandler:nil];
+}
+
+- (void)seekToTime:(NSInteger)drageSecond completionHandler:(void (^)(BOOL))completionHandler{
+    
+    if (self.player.currentItem.status == AVPlayerItemStatusReadyToPlay) {
+        __weak __typeof(self) weakSelf = self;
+        
+        [self.player seekToTime:CMTimeMake(drageSecond, 1) toleranceBefore:CMTimeMake(1, 1) toleranceAfter:CMTimeMake(1, 1) completionHandler:^(BOOL finished) {
+            if (completionHandler) {
+                completionHandler(finished);
+            }
+            [weakSelf.player play];
+        }];
     }
     
 }

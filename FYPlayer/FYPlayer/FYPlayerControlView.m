@@ -8,6 +8,7 @@
 
 #import "FYPlayerControlView.h"
 #import "FYPlayer.h"
+#import "FYSlider.h"
 
 @interface FYPlayerControlView ()
 /** 标题 */
@@ -25,6 +26,8 @@
 @property (nonatomic, strong) UILabel                 *totalTimeLabel;
 /** 全屏按钮 */
 @property (nonatomic, strong) UIButton                *fullScreenBtn;
+
+@property (nonatomic, strong) FYSlider                *slider;
 
 @end
 
@@ -44,6 +47,7 @@
         [self.bottomImageView addSubview:self.totalTimeLabel];
         [self.bottomImageView addSubview:self.fullScreenBtn];
         [self.bottomImageView addSubview:self.startBtn];
+        [self.bottomImageView addSubview:self.slider];
         //添加子控件约束
         [self makeSubViewConstraints];
     }
@@ -80,8 +84,7 @@
     }];
     
     [self.currentTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        //make.leading.equalTo(self.startBtn.mas_trailing).offset(-3);
-        make.leading.equalTo(self.bottomImageView.mas_leading).offset(5);
+        make.leading.equalTo(self.startBtn.mas_trailing).offset(-3);
         make.centerY.equalTo(self.startBtn.mas_centerY);
         make.width.mas_equalTo(43);
     }];
@@ -96,6 +99,12 @@
         make.trailing.equalTo(self.fullScreenBtn.mas_leading).offset(3);
         make.centerY.equalTo(self.startBtn.mas_centerY);
         make.width.mas_equalTo(43);
+    }];
+    
+    [self.slider mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.currentTimeLabel.mas_right).offset(3);
+        make.right.equalTo(self.totalTimeLabel.mas_left).offset(3);
+        make.centerY.equalTo(self.startBtn);
     }];
 }
 
@@ -120,8 +129,39 @@
     }
 }
 
+- (void)sliderTouchBegan:(FYSlider *)slider{
+    
+}
+
+- (void)sliderTouchChange:(FYSlider *)slider{
+    
+}
+
+- (void)sliderTouchEnd:(FYSlider *)slider{
+    if ([self.delegate respondsToSelector:@selector(fy_playerDraggedSlider:)]) {
+        [self.delegate fy_playerDraggedSlider:slider.value];
+    }
+}
+
 - (void)fy_playerPlayingState:(BOOL)state{
     self.startBtn.selected = state;
+}
+
+/** 当前播放时间 */
+- (void)fy_playerCurrentTime:(NSInteger)currentTime totalTime:(NSInteger)totalTime value:(CGFloat)value{
+    
+    NSInteger curMin = currentTime/60;
+    NSInteger curSec = currentTime%60;
+    
+    NSInteger durMin = totalTime/60;
+    NSInteger durSec = totalTime%60;
+    
+    //如果正在拖动，不自动进行
+    self.slider.value = value;
+    
+    self.currentTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",curMin,curSec];
+    self.totalTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",durMin,durSec];
+    
 }
 
 #pragma mark - getter
@@ -184,6 +224,21 @@
         _totalTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _totalTimeLabel;
+}
+
+- (FYSlider *)slider{
+    
+    if (!_slider) {
+        _slider = [[FYSlider alloc] init];
+        _slider.minimumValue = 0;
+        _slider.maximumValue = 1;
+        [_slider addTarget:self action:@selector(sliderTouchBegan:) forControlEvents:UIControlEventTouchDown];
+        [_slider addTarget:self action:@selector(sliderTouchChange:) forControlEvents:UIControlEventValueChanged];
+        [_slider addTarget:self action:@selector(sliderTouchEnd:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
+        
+        [_slider setThumbImage:FYPlayerImage(@"FYPlayer_slider") forState:UIControlStateNormal];
+    }
+    return _slider;
 }
 
 - (UIButton *)fullScreenBtn {
