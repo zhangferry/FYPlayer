@@ -9,6 +9,7 @@
 #import "FYPlayerControlView.h"
 #import "FYPlayer.h"
 #import "FYSlider.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface FYPlayerControlView ()
 /** 标题 */
@@ -29,6 +30,8 @@
 
 @property (nonatomic, strong) FYSlider                *slider;
 
+@property (nonatomic, strong) MPVolumeView            *airPlayBtn;
+
 @end
 
 @implementation FYPlayerControlView
@@ -41,6 +44,7 @@
         
         [self addSubview:self.topImageView];
         [self.topImageView addSubview:self.titleLabel];
+        [self.topImageView addSubview:self.airPlayBtn];
         
         [self addSubview:self.bottomImageView];
         [self.bottomImageView addSubview:self.currentTimeLabel];
@@ -48,6 +52,9 @@
         [self.bottomImageView addSubview:self.fullScreenBtn];
         [self.bottomImageView addSubview:self.startBtn];
         [self.bottomImageView addSubview:self.slider];
+        
+        
+        
         //添加子控件约束
         [self makeSubViewConstraints];
     }
@@ -105,6 +112,12 @@
         make.left.equalTo(self.currentTimeLabel.mas_right).offset(3);
         make.right.equalTo(self.totalTimeLabel.mas_left).offset(3);
         make.centerY.equalTo(self.startBtn);
+    }];
+    
+    [self.airPlayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.topImageView.mas_right).offset(-5);
+        make.centerY.equalTo(self.topImageView);
+        make.size.mas_equalTo(CGSizeMake(45, 45));
     }];
 }
 
@@ -249,6 +262,16 @@
         [_fullScreenBtn addTarget:self action:@selector(fullScreenBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _fullScreenBtn;
+}
+
+- (MPVolumeView *)airPlayBtn{
+    if (!_airPlayBtn) {
+        _airPlayBtn = [[MPVolumeView alloc] init];
+        _airPlayBtn.showsRouteButton = YES;
+        _airPlayBtn.showsVolumeSlider = NO;
+        
+    }
+    return _airPlayBtn;
 }
 
 @end

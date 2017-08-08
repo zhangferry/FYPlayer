@@ -26,6 +26,10 @@
 
 @property (nonatomic, strong) UIView *fatherView;
 
+@property (nonatomic, assign, getter=isAirPlayVideoAvtive) BOOL airPlayEnabled;
+
+@property (nonatomic, strong) UIWindow *externalWindow;
+
 @end
 
 @implementation FYPlayerView
@@ -90,6 +94,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStateBarOrientationChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
     //播放完成
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playerMovieFinish:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalScreenDidConnect:) name:UIScreenDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(externalScreenDidDisconnect:) name:UIScreenDidDisconnectNotification object:nil];
+    
 }
 
 - (void)play{
@@ -138,6 +146,20 @@
     [self addNotification];
     //添加计时器
     [self addTimeObserve];
+    
+    [self settingAirPlay];
+    
+}
+
+- (void)settingAirPlay{
+    
+    if (self.airPlayEnabled) {
+        [self.player setAllowsExternalPlayback:YES];
+        [self.player setUsesExternalPlaybackWhileExternalScreenIsActive:YES];
+        
+        [self.player removeObserver:self forKeyPath:@"airPlayVideoActive"];
+        [self.player addObserver:self forKeyPath:@"airPlayVideoActive" options:NSKeyValueObservingOptionNew context:nil];
+    }
 }
 
 - (void)resetPlayer{
@@ -148,6 +170,13 @@
         [self.player removeTimeObserver:self.timeObserve];
         self.timeObserve = nil;
     }
+}
+
+/**
+ 是否支持airplay
+ */
+- (BOOL)isAirPlayVideoAvtive{
+    return [AVPlayer instancesRespondToSelector:@selector(isAirPlayVideoActive)] && self.player.externalPlaybackActive;
 }
 
 /**
@@ -202,7 +231,12 @@
             }else if (player.rate == 1){
                 self.state = FYPlayerStatePlaying;
             }
+        }else if ([keyPath isEqualToString:@"airPlayVideoActive"]){
+            
+            BOOL airPlayVideoActive = self.player.externalPlaybackActive;
+            NSLog(@"airPlayActive状态变化%d",airPlayVideoActive);
         }
+        
     }
 }
 
@@ -381,6 +415,51 @@
         return CGAffineTransformMakeRotation(M_PI_2);
     }
     return CGAffineTransformIdentity;
+}
+
+#pragma mark - airplay
+- (void)externalScreenDidConnect:(NSNotification *)noti{
+    UIScreen *screen = [noti object];
+    [self setupExternalWindowForScreen:screen];
+    
+    //[self inserts];
+    UILabel *airPlayLabel = [[UILabel alloc] init];
+    airPlayLabel.text = @"AirPlay";
+    
+    airPlayLabel.textColor = [UIColor whiteColor];
+    airPlayLabel.font = [UIFont boldSystemFontOfSize:50];
+    
+    [self.externalWindow addSubview:airPlayLabel];
+    
+    [airPlayLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.externalWindow);
+        make.width.height.mas_equalTo(50);
+    }];
+}
+
+- (void)externalScreenDidDisconnect:(NSNotification *)noti{
+    [self setupExternalWindowForScreen:nil];
+}
+
+- (void)setupExternalWindowForScreen:(UIScreen *)screen {
+    if (screen != nil) {
+        self.externalWindow = [[UIWindow alloc] initWithFrame:screen.applicationFrame];
+        self.externalWindow.hidden = NO;
+        self.externalWindow.clipsToBounds = YES;
+        
+        if (screen.availableModes.count > 0) {
+            UIScreenMode *desiredMode = [screen.availableModes objectAtIndex:screen.availableModes.count-1];
+            screen.currentMode = desiredMode;
+        }
+        
+        self.externalWindow.screen = screen;
+        [self.externalWindow makeKeyAndVisible];
+    } else {
+        [self.externalWindow removeFromSuperview];
+        [self.externalWindow resignKeyWindow];
+        self.externalWindow.hidden = YES;
+        self.externalWindow = nil;
+    }
 }
 
 
