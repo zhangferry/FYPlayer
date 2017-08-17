@@ -28,20 +28,6 @@
     videoView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:videoView];
     
-    //airPlay
-    UILabel *airPlayLabel = [[UILabel alloc] init];
-    airPlayLabel.text = @"AirPlay";
-    
-    airPlayLabel.textColor = [UIColor whiteColor];
-    airPlayLabel.font = [UIFont boldSystemFontOfSize:20];
-    
-    [videoView addSubview:airPlayLabel];
-    
-    [airPlayLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(videoView);
-        make.width.height.mas_equalTo(80);
-    }];
-    
     //playerView
     self.playerView = [[FYPlayerView alloc] init];
 
@@ -52,6 +38,7 @@
     [self.playerView playerWithView:videoView videoModel:videoModel];
     //[self.playerView play];
 }
+
 
 - (BOOL)shouldAutorotate{
     return NO;

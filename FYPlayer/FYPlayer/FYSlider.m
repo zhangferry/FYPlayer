@@ -11,8 +11,6 @@
 @implementation FYSlider
 
 
-
-
 - (void)setValue:(float)value{
     [super setValue:value];
     

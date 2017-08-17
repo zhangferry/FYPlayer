@@ -19,6 +19,8 @@
 @property (nonatomic, strong) AVURLAsset          *urlAsset;
 @property (nonatomic, strong) id                  timeObserve;
 
+@property (nonatomic, strong) AVAssetImageGenerator *imageGenertor;
+
 @property (nonatomic, strong) FYVideoModel        *videoModel;
 @property (nonatomic, strong) FYPlayerControlView *controlView;
 
@@ -277,10 +279,44 @@
     
 }
 
+/**
+ 拖动进度条
+
+ @param value 拖动
+ */
 - (void)fy_playerDraggedSlider:(CGFloat)value{
     
     NSInteger drageSecond = CMTimeGetSeconds(self.playerItem.duration)*value;
     [self seekToTime:drageSecond completionHandler:nil];
+}
+
+- (void)fy_playerDraggingSlider:(CGFloat)value{
+    NSInteger drageSecond = CMTimeGetSeconds(self.playerItem.duration)*value;
+    
+    CGFloat totalTime = (CGFloat)_playerItem.duration.value/_playerItem.duration.timescale;
+    CGFloat draggedTime = totalTime * value;
+    CMTime currentTime = CMTimeMake(draggedTime, 1);
+    
+    if (self.player.currentItem.status == AVPlayerItemStatusReadyToPlay) {
+        
+        [self.imageGenertor cancelAllCGImageGeneration];
+        self.imageGenertor.appliesPreferredTrackTransform = YES;
+        self.imageGenertor.maximumSize = CGSizeMake(120, 120);
+        AVAssetImageGeneratorCompletionHandler hander = ^(CMTime requestedTime, CGImageRef im, CMTime actualTime, AVAssetImageGeneratorResult result, NSError *error){
+            if (result == AVAssetImageGeneratorSucceeded) {
+                UIImage *image = [UIImage imageWithCGImage:im];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.controlView fy_playerDraggedTime:drageSecond preImage:image];
+                });
+                
+            }else if (result == AVAssetImageGeneratorFailed){
+                NSLog(@"AVAssetImageGeneratorFailed:%@",error);
+            }
+        };
+        [self.imageGenertor generateCGImagesAsynchronouslyForTimes:[NSArray arrayWithObject:[NSValue valueWithCMTime:currentTime]] completionHandler:hander];
+        
+    }
+    
 }
 
 - (void)seekToTime:(NSInteger)drageSecond completionHandler:(void (^)(BOOL))completionHandler{
@@ -460,6 +496,15 @@
         self.externalWindow.hidden = YES;
         self.externalWindow = nil;
     }
+}
+
+#pragma mark - Getter
+
+- (AVAssetImageGenerator *)imageGenertor{
+    if (!_imageGenertor) {
+        _imageGenertor = [AVAssetImageGenerator assetImageGeneratorWithAsset:self.urlAsset];
+    }
+    return _imageGenertor;
 }
 
 

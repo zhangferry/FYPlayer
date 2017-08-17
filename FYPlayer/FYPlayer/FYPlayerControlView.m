@@ -31,6 +31,8 @@
 @property (nonatomic, strong) FYSlider                *slider;
 
 @property (nonatomic, strong) MPVolumeView            *airPlayBtn;
+/* 预览视频 */
+@property (nonatomic, strong) UIImageView                  *preImageView;
 
 @end
 
@@ -53,6 +55,7 @@
         [self.bottomImageView addSubview:self.startBtn];
         [self.bottomImageView addSubview:self.slider];
         
+        [self addSubview:self.preImageView];
         
         
         //添加子控件约束
@@ -114,11 +117,19 @@
         make.centerY.equalTo(self.startBtn);
     }];
     
+    [self.preImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self);
+        make.size.mas_equalTo(CGSizeMake(150, 150));
+    }];
+    
     [self.airPlayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.topImageView.mas_right).offset(-5);
         make.centerY.equalTo(self.topImageView);
         make.size.mas_equalTo(CGSizeMake(45, 45));
     }];
+    
+    //[[UIApplication sharedApplication] sendAction:NSSelectorFromString(@"_displayAudioRoutePicker") to:self.airPlayBtn from:self.topImageView forEvent:nil];
+    
 }
 
 /**
@@ -143,17 +154,21 @@
 }
 
 - (void)sliderTouchBegan:(FYSlider *)slider{
+    _preImageView.alpha = 1;
     
 }
 
 - (void)sliderTouchChange:(FYSlider *)slider{
-    
+    if ([self.delegate respondsToSelector:@selector(fy_playerDraggingSlider:)]) {
+        [self.delegate fy_playerDraggingSlider:slider.value];
+    }
 }
 
 - (void)sliderTouchEnd:(FYSlider *)slider{
     if ([self.delegate respondsToSelector:@selector(fy_playerDraggedSlider:)]) {
         [self.delegate fy_playerDraggedSlider:slider.value];
     }
+    _preImageView.alpha = 0;
 }
 
 - (void)fy_playerPlayingState:(BOOL)state{
@@ -175,6 +190,20 @@
     self.currentTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",curMin,curSec];
     self.totalTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",durMin,durSec];
     
+}
+
+/**
+ 显示快进预览图
+
+ @param time 当前时间
+ @param image 预览图片
+ */
+- (void)fy_playerDraggedTime:(NSInteger)time preImage:(UIImage *)image{
+    self.preImageView.image = image;
+    
+//    [UIView animateWithDuration:0.5 animations:^{
+//        _preImageView.alpha = 0;
+//    }];
 }
 
 #pragma mark - getter
@@ -262,6 +291,17 @@
         [_fullScreenBtn addTarget:self action:@selector(fullScreenBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _fullScreenBtn;
+}
+
+- (UIImageView *)preImageView{
+    if (!_preImageView) {
+        _preImageView = [[UIImageView alloc] init];
+        
+        _preImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _preImageView.alpha = 0;
+
+    }
+    return _preImageView;
 }
 
 - (MPVolumeView *)airPlayBtn{

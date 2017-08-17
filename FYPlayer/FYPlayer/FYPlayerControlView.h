@@ -13,8 +13,10 @@
 - (void)fy_playerFullScreenAction;
 
 - (void)fy_playerPauseAction;
-/** 拖动进度条 */
+/** 拖动进度条结束 */
 - (void)fy_playerDraggedSlider:(CGFloat)value;
+/** 正在拖动进度条 */
+- (void)fy_playerDraggingSlider:(CGFloat)value;
 
 @end
 
@@ -27,5 +29,7 @@
 - (void)fy_playerCurrentTime:(NSInteger)currentTime totalTime:(NSInteger)totalTime value:(CGFloat)value;
 /** 当前缓存 */
 - (void)fy_playerSetProgress:(CGFloat)progress;
+
+- (void)fy_playerDraggedTime:(NSInteger)time preImage:(UIImage *)image;
 
 @end
