@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E1BD0351F16021800DF46D0 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD01D1F16021800DF46D0 /* MASCompositeConstraint.m */; };
-		8E1BD0361F16021800DF46D0 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0201F16021800DF46D0 /* MASConstraint.m */; };
-		8E1BD0371F16021800DF46D0 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0221F16021800DF46D0 /* MASConstraintMaker.m */; };
-		8E1BD0381F16021800DF46D0 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0241F16021800DF46D0 /* MASLayoutConstraint.m */; };
-		8E1BD0391F16021800DF46D0 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0281F16021800DF46D0 /* MASViewAttribute.m */; };
-		8E1BD03A1F16021800DF46D0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD02A1F16021800DF46D0 /* MASViewConstraint.m */; };
-		8E1BD03B1F16021800DF46D0 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD02C1F16021800DF46D0 /* NSArray+MASAdditions.m */; };
-		8E1BD03C1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD02F1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		8E1BD03D1F16021800DF46D0 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0311F16021800DF46D0 /* View+MASAdditions.m */; };
-		8E1BD03E1F16021800DF46D0 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1BD0341F16021800DF46D0 /* ViewController+MASAdditions.m */; };
 		8E1BD0541F160AC800DF46D0 /* FYPlayer_bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */; };
 		8E1BD0551F160AC800DF46D0 /* FYPlayer_fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */; };
 		8E1BD0561F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04B1F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png */; };
@@ -30,13 +20,17 @@
 		8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */; };
 		8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */; };
+		8E406B6E23E3ED51001AF74B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6D23E3ED51001AF74B /* Player.swift */; };
+		8E406B7023E3ED87001AF74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6F23E3ED87001AF74B /* AppDelegate.swift */; };
+		8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7123E3F35E001AF74B /* MainViewController.swift */; };
+		8E406B7423E544D5001AF74B /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7323E544D5001AF74B /* MusicViewController.swift */; };
+		8E406B7623E54502001AF74B /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7523E54502001AF74B /* VideoListViewController.swift */; };
+		8E406B7A23E54689001AF74B /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7923E54689001AF74B /* LiveViewController.swift */; };
+		8E406B7C23E69FE2001AF74B /* video_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E406B7B23E69FE1001AF74B /* video_list.json */; };
 		8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C335D1F38415200BBF938 /* FYSlider.m */; };
-		8EA5CBD21F0F713F0097A69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD11F0F713F0097A69F /* main.m */; };
-		8EA5CBD51F0F713F0097A69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBD41F0F713F0097A69F /* AppDelegate.m */; };
 		8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */; };
 		8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */; };
 		8EA5CBEB1F0F713F0097A69F /* FYPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBEA1F0F713F0097A69F /* FYPlayerTests.m */; };
-		8EA5CBF71F0F71880097A69F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBF61F0F71880097A69F /* MainViewController.m */; };
 		8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBFA1F0F71C60097A69F /* FYPlayerView.m */; };
 		8EA5CBFE1F0F71D80097A69F /* FYPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBFD1F0F71D80097A69F /* FYPlayerControlView.m */; };
 		8EA5CC011F0F720A0097A69F /* FYVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CC001F0F720A0097A69F /* FYVideoModel.m */; };
@@ -74,31 +68,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E1BD01C1F16021800DF46D0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		8E1BD01D1F16021800DF46D0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		8E1BD01E1F16021800DF46D0 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		8E1BD01F1F16021800DF46D0 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		8E1BD0201F16021800DF46D0 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		8E1BD0211F16021800DF46D0 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		8E1BD0221F16021800DF46D0 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		8E1BD0231F16021800DF46D0 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		8E1BD0241F16021800DF46D0 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		8E1BD0251F16021800DF46D0 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		8E1BD0261F16021800DF46D0 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		8E1BD0271F16021800DF46D0 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		8E1BD0281F16021800DF46D0 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		8E1BD0291F16021800DF46D0 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		8E1BD02A1F16021800DF46D0 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		8E1BD02B1F16021800DF46D0 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		8E1BD02C1F16021800DF46D0 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		8E1BD02D1F16021800DF46D0 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8E1BD02E1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		8E1BD02F1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		8E1BD0301F16021800DF46D0 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		8E1BD0311F16021800DF46D0 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		8E1BD0321F16021800DF46D0 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8E1BD0331F16021800DF46D0 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		8E1BD0341F16021800DF46D0 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1BD0451F1609E700DF46D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_bottom_shadow.png; sourceTree = "<group>"; };
@@ -113,20 +82,23 @@
 		8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@3x.png"; sourceTree = "<group>"; };
 		8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_top_shadow.png; sourceTree = "<group>"; };
 		8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FYPlayer.bundle; sourceTree = "<group>"; };
+		8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FYPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E406B6D23E3ED51001AF74B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8E406B6F23E3ED87001AF74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E406B7123E3F35E001AF74B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8E406B7323E544D5001AF74B /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		8E406B7523E54502001AF74B /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		8E406B7923E54689001AF74B /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		8E406B7B23E69FE1001AF74B /* video_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video_list.json; sourceTree = "<group>"; };
 		8E6C335C1F38415200BBF938 /* FYSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSlider.h; sourceTree = "<group>"; };
 		8E6C335D1F38415200BBF938 /* FYSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSlider.m; sourceTree = "<group>"; };
 		8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EA5CBD11F0F713F0097A69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8EA5CBD31F0F713F0097A69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8EA5CBD41F0F713F0097A69F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA5CBDF1F0F713F0097A69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA5CBE11F0F713F0097A69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA5CBE61F0F713F0097A69F /* FYPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA5CBEA1F0F713F0097A69F /* FYPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYPlayerTests.m; sourceTree = "<group>"; };
 		8EA5CBEC1F0F713F0097A69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EA5CBF51F0F71880097A69F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		8EA5CBF61F0F71880097A69F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8EA5CBF91F0F71C60097A69F /* FYPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPlayerView.h; sourceTree = "<group>"; };
 		8EA5CBFA1F0F71C60097A69F /* FYPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYPlayerView.m; sourceTree = "<group>"; };
 		8EA5CBFC1F0F71D80097A69F /* FYPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPlayerControlView.h; sourceTree = "<group>"; };
@@ -161,38 +133,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E1BD01B1F16021800DF46D0 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				8E1BD01C1F16021800DF46D0 /* MASCompositeConstraint.h */,
-				8E1BD01D1F16021800DF46D0 /* MASCompositeConstraint.m */,
-				8E1BD01E1F16021800DF46D0 /* MASConstraint+Private.h */,
-				8E1BD01F1F16021800DF46D0 /* MASConstraint.h */,
-				8E1BD0201F16021800DF46D0 /* MASConstraint.m */,
-				8E1BD0211F16021800DF46D0 /* MASConstraintMaker.h */,
-				8E1BD0221F16021800DF46D0 /* MASConstraintMaker.m */,
-				8E1BD0231F16021800DF46D0 /* MASLayoutConstraint.h */,
-				8E1BD0241F16021800DF46D0 /* MASLayoutConstraint.m */,
-				8E1BD0251F16021800DF46D0 /* Masonry.h */,
-				8E1BD0261F16021800DF46D0 /* MASUtilities.h */,
-				8E1BD0271F16021800DF46D0 /* MASViewAttribute.h */,
-				8E1BD0281F16021800DF46D0 /* MASViewAttribute.m */,
-				8E1BD0291F16021800DF46D0 /* MASViewConstraint.h */,
-				8E1BD02A1F16021800DF46D0 /* MASViewConstraint.m */,
-				8E1BD02B1F16021800DF46D0 /* NSArray+MASAdditions.h */,
-				8E1BD02C1F16021800DF46D0 /* NSArray+MASAdditions.m */,
-				8E1BD02D1F16021800DF46D0 /* NSArray+MASShorthandAdditions.h */,
-				8E1BD02E1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				8E1BD02F1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				8E1BD0301F16021800DF46D0 /* View+MASAdditions.h */,
-				8E1BD0311F16021800DF46D0 /* View+MASAdditions.m */,
-				8E1BD0321F16021800DF46D0 /* View+MASShorthandAdditions.h */,
-				8E1BD0331F16021800DF46D0 /* ViewController+MASAdditions.h */,
-				8E1BD0341F16021800DF46D0 /* ViewController+MASAdditions.m */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
 		8E1BD0441F1609E700DF46D0 /* FYBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +150,25 @@
 				8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */,
 			);
 			path = FYBundle;
+			sourceTree = "<group>";
+		};
+		8E406B7723E54560001AF74B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8E406B7823E54585001AF74B /* View */,
+				8E406B7123E3F35E001AF74B /* MainViewController.swift */,
+				8E406B7323E544D5001AF74B /* MusicViewController.swift */,
+				8E406B7523E54502001AF74B /* VideoListViewController.swift */,
+				8E406B7923E54689001AF74B /* LiveViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		8E406B7823E54585001AF74B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8EA5CBC41F0F713F0097A69F = {
@@ -236,12 +195,10 @@
 			isa = PBXGroup;
 			children = (
 				8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */,
-				8E1BD01B1F16021800DF46D0 /* Masonry */,
-				8EA5CBD31F0F713F0097A69F /* AppDelegate.h */,
-				8EA5CBD41F0F713F0097A69F /* AppDelegate.m */,
+				8E406B6F23E3ED87001AF74B /* AppDelegate.swift */,
+				8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */,
 				8EA5CBF81F0F71B30097A69F /* FYPlayer */,
-				8EA5CBF51F0F71880097A69F /* MainViewController.h */,
-				8EA5CBF61F0F71880097A69F /* MainViewController.m */,
+				8E406B7723E54560001AF74B /* Scene */,
 				8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */,
 				8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */,
 				8EA5CBE11F0F713F0097A69F /* Info.plist */,
@@ -253,7 +210,7 @@
 		8EA5CBD01F0F713F0097A69F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5CBD11F0F713F0097A69F /* main.m */,
+				8E406B7B23E69FE1001AF74B /* video_list.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -279,6 +236,7 @@
 				8EA5CBFD1F0F71D80097A69F /* FYPlayerControlView.m */,
 				8E6C335C1F38415200BBF938 /* FYSlider.h */,
 				8E6C335D1F38415200BBF938 /* FYSlider.m */,
+				8E406B6D23E3ED51001AF74B /* Player.swift */,
 			);
 			path = FYPlayer;
 			sourceTree = "<group>";
@@ -356,6 +314,7 @@
 					8EA5CBCC1F0F713F0097A69F = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X36232M6Y9;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					8EA5CBE51F0F713F0097A69F = {
@@ -370,6 +329,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -409,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */,
+				8E406B7C23E69FE2001AF74B /* video_list.json in Resources */,
 				8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */,
 				8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */,
 			);
@@ -435,22 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1BD0361F16021800DF46D0 /* MASConstraint.m in Sources */,
-				8E1BD0391F16021800DF46D0 /* MASViewAttribute.m in Sources */,
-				8E1BD03E1F16021800DF46D0 /* ViewController+MASAdditions.m in Sources */,
-				8E1BD03B1F16021800DF46D0 /* NSArray+MASAdditions.m in Sources */,
+				8E406B7023E3ED87001AF74B /* AppDelegate.swift in Sources */,
 				8EA5CBFE1F0F71D80097A69F /* FYPlayerControlView.m in Sources */,
-				8E1BD03A1F16021800DF46D0 /* MASViewConstraint.m in Sources */,
-				8E1BD0381F16021800DF46D0 /* MASLayoutConstraint.m in Sources */,
-				8EA5CBD51F0F713F0097A69F /* AppDelegate.m in Sources */,
-				8EA5CBD21F0F713F0097A69F /* main.m in Sources */,
-				8E1BD03D1F16021800DF46D0 /* View+MASAdditions.m in Sources */,
-				8E1BD0351F16021800DF46D0 /* MASCompositeConstraint.m in Sources */,
-				8E1BD03C1F16021800DF46D0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				8E1BD0371F16021800DF46D0 /* MASConstraintMaker.m in Sources */,
+				8E406B7623E54502001AF74B /* VideoListViewController.swift in Sources */,
+				8E406B7423E544D5001AF74B /* MusicViewController.swift in Sources */,
+				8E406B7A23E54689001AF74B /* LiveViewController.swift in Sources */,
 				8EA5CC011F0F720A0097A69F /* FYVideoModel.m in Sources */,
-				8EA5CBF71F0F71880097A69F /* MainViewController.m in Sources */,
 				8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */,
+				8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */,
+				8E406B6E23E3ED51001AF74B /* Player.swift in Sources */,
 				8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
@@ -627,6 +582,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/FYPlayer/FYPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -634,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
@@ -643,12 +602,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/FYPlayer/FYPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		8EA5CBF31F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FYPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -661,6 +623,7 @@
 		8EA5CBF41F0F713F0097A69F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FYPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
