@@ -14,10 +14,11 @@ class MusicViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupUI()
     }
     
     private func setupUI() {
-        self.title = "Music"
+        self.navigationItem.title = "Music"
     }
 
     /*

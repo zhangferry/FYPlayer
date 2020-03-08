@@ -7,19 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E1BD0541F160AC800DF46D0 /* FYPlayer_bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */; };
-		8E1BD0551F160AC800DF46D0 /* FYPlayer_fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */; };
-		8E1BD0561F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04B1F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png */; };
-		8E1BD0571F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04C1F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png */; };
-		8E1BD0581F160AC800DF46D0 /* FYPlayer_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04D1F160AC800DF46D0 /* FYPlayer_pause.png */; };
-		8E1BD0591F160AC800DF46D0 /* FYPlayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04E1F160AC800DF46D0 /* FYPlayer_pause@2x.png */; };
-		8E1BD05A1F160AC800DF46D0 /* FYPlayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD04F1F160AC800DF46D0 /* FYPlayer_pause@3x.png */; };
-		8E1BD05B1F160AC800DF46D0 /* FYPlayer_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0501F160AC800DF46D0 /* FYPlayer_play.png */; };
-		8E1BD05C1F160AC800DF46D0 /* FYPlayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */; };
-		8E1BD05D1F160AC800DF46D0 /* FYPlayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */; };
-		8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */; };
-		8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */; };
+		00096B85B4B5063F025433BA /* Pods_FYPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03B4937B6A8068C0058B5A7 /* Pods_FYPlayer.framework */; };
 		8E406B6E23E3ED51001AF74B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6D23E3ED51001AF74B /* Player.swift */; };
 		8E406B7023E3ED87001AF74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6F23E3ED87001AF74B /* AppDelegate.swift */; };
 		8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7123E3F35E001AF74B /* MainViewController.swift */; };
@@ -27,6 +15,7 @@
 		8E406B7623E54502001AF74B /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7523E54502001AF74B /* VideoListViewController.swift */; };
 		8E406B7A23E54689001AF74B /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7923E54689001AF74B /* LiveViewController.swift */; };
 		8E406B7C23E69FE2001AF74B /* video_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E406B7B23E69FE1001AF74B /* video_list.json */; };
+		8E65887B23F3E79600FA7ACC /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E65887A23F3E79600FA7ACC /* Configs.swift */; };
 		8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C335D1F38415200BBF938 /* FYSlider.m */; };
 		8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */; };
 		8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */; };
@@ -34,16 +23,10 @@
 		8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBFA1F0F71C60097A69F /* FYPlayerView.m */; };
 		8EA5CBFE1F0F71D80097A69F /* FYPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBFD1F0F71D80097A69F /* FYPlayerControlView.m */; };
 		8EA5CC011F0F720A0097A69F /* FYVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CC001F0F720A0097A69F /* FYVideoModel.m */; };
+		DB8E3877629EE4E7EE4FB3BE /* Pods_FYPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A39DC0CAFEBAB5725BF294 /* Pods_FYPlayerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8E1BD0921F16225100DF46D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EA5CBC51F0F713F0097A69F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E1BD0421F1609E700DF46D0;
-			remoteInfo = FYBundle;
-		};
 		8EA5CBE71F0F713F0097A69F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8EA5CBC51F0F713F0097A69F /* Project object */;
@@ -60,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8E1BD0941F1622F500DF46D0 /* FYBundle.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AABF42F6B51D57CD56842C7 /* Pods_FYBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48BA95DB1C79C02083C36779 /* Pods-FYPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-FYPlayerTests/Pods-FYPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F4039F17BAFF6B366B913C0 /* Pods-FYBundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYBundle.release.xcconfig"; path = "Target Support Files/Pods-FYBundle/Pods-FYBundle.release.xcconfig"; sourceTree = "<group>"; };
 		8E1BD0451F1609E700DF46D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1BD0491F160AC800DF46D0 /* FYPlayer_bottom_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_bottom_shadow.png; sourceTree = "<group>"; };
 		8E1BD04A1F160AC800DF46D0 /* FYPlayer_fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_fullscreen.png; sourceTree = "<group>"; };
@@ -81,7 +65,6 @@
 		8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@2x.png"; sourceTree = "<group>"; };
 		8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@3x.png"; sourceTree = "<group>"; };
 		8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_top_shadow.png; sourceTree = "<group>"; };
-		8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FYPlayer.bundle; sourceTree = "<group>"; };
 		8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FYPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E406B6D23E3ED51001AF74B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8E406B6F23E3ED87001AF74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +73,7 @@
 		8E406B7523E54502001AF74B /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
 		8E406B7923E54689001AF74B /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		8E406B7B23E69FE1001AF74B /* video_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video_list.json; sourceTree = "<group>"; };
+		8E65887A23F3E79600FA7ACC /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		8E6C335C1F38415200BBF938 /* FYSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSlider.h; sourceTree = "<group>"; };
 		8E6C335D1F38415200BBF938 /* FYSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSlider.m; sourceTree = "<group>"; };
 		8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,20 +90,20 @@
 		8EA5CBFF1F0F720A0097A69F /* FYVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYVideoModel.h; sourceTree = "<group>"; };
 		8EA5CC001F0F720A0097A69F /* FYVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYVideoModel.m; sourceTree = "<group>"; };
 		8EA5CC021F0F723B0097A69F /* FYPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYPlayer.h; sourceTree = "<group>"; };
+		90EDEE1D2A59CA4332E06D40 /* Pods-FYPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYPlayer.release.xcconfig"; path = "Target Support Files/Pods-FYPlayer/Pods-FYPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		AFF88A9F05D228C943B46C25 /* Pods-FYBundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYBundle.debug.xcconfig"; path = "Target Support Files/Pods-FYBundle/Pods-FYBundle.debug.xcconfig"; sourceTree = "<group>"; };
+		E03B4937B6A8068C0058B5A7 /* Pods_FYPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0824BE8138474AB38807D41 /* Pods-FYPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYPlayer.debug.xcconfig"; path = "Target Support Files/Pods-FYPlayer/Pods-FYPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A39DC0CAFEBAB5725BF294 /* Pods_FYPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED2BE76DEF7C1EB22688F2C /* Pods-FYPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-FYPlayerTests/Pods-FYPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E1BD0401F1609E700DF46D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8EA5CBCA1F0F713F0097A69F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00096B85B4B5063F025433BA /* Pods_FYPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,12 +111,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8E3877629EE4E7EE4FB3BE /* Pods_FYPlayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042D91FC5D960C14880ECBB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AABF42F6B51D57CD56842C7 /* Pods_FYBundle.framework */,
+				E03B4937B6A8068C0058B5A7 /* Pods_FYPlayer.framework */,
+				F6A39DC0CAFEBAB5725BF294 /* Pods_FYPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		807A62ACB02772831BBFAC49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFF88A9F05D228C943B46C25 /* Pods-FYBundle.debug.xcconfig */,
+				6F4039F17BAFF6B366B913C0 /* Pods-FYBundle.release.xcconfig */,
+				F0824BE8138474AB38807D41 /* Pods-FYPlayer.debug.xcconfig */,
+				90EDEE1D2A59CA4332E06D40 /* Pods-FYPlayer.release.xcconfig */,
+				FED2BE76DEF7C1EB22688F2C /* Pods-FYPlayerTests.debug.xcconfig */,
+				48BA95DB1C79C02083C36779 /* Pods-FYPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E1BD0441F1609E700DF46D0 /* FYBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +165,8 @@
 			children = (
 				8E406B7823E54585001AF74B /* View */,
 				8E406B7123E3F35E001AF74B /* MainViewController.swift */,
-				8E406B7323E544D5001AF74B /* MusicViewController.swift */,
 				8E406B7523E54502001AF74B /* VideoListViewController.swift */,
+				8E406B7323E544D5001AF74B /* MusicViewController.swift */,
 				8E406B7923E54689001AF74B /* LiveViewController.swift */,
 			);
 			path = Scene;
@@ -171,6 +179,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8E65887823F3E73C00FA7ACC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8E65887A23F3E79600FA7ACC /* Configs.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8E65887923F3E77200FA7ACC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8E406B6F23E3ED87001AF74B /* AppDelegate.swift */,
+				8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		8EA5CBC41F0F713F0097A69F = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +203,8 @@
 				8EA5CBE91F0F713F0097A69F /* FYPlayerTests */,
 				8E1BD0441F1609E700DF46D0 /* FYBundle */,
 				8EA5CBCE1F0F713F0097A69F /* Products */,
+				807A62ACB02772831BBFAC49 /* Pods */,
+				042D91FC5D960C14880ECBB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,7 +213,6 @@
 			children = (
 				8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */,
 				8EA5CBE61F0F713F0097A69F /* FYPlayerTests.xctest */,
-				8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,14 +220,10 @@
 		8EA5CBCF1F0F713F0097A69F /* FYPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				8E1BD0961F16244E00DF46D0 /* FYPlayer.bundle */,
-				8E406B6F23E3ED87001AF74B /* AppDelegate.swift */,
-				8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */,
-				8EA5CBF81F0F71B30097A69F /* FYPlayer */,
+				8E65887923F3E77200FA7ACC /* Application */,
+				8E65887823F3E73C00FA7ACC /* Foundation */,
+				8EA5CBF81F0F71B30097A69F /* Source */,
 				8E406B7723E54560001AF74B /* Scene */,
-				8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */,
-				8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */,
-				8EA5CBE11F0F713F0097A69F /* Info.plist */,
 				8EA5CBD01F0F713F0097A69F /* Supporting Files */,
 			);
 			path = FYPlayer;
@@ -211,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				8E406B7B23E69FE1001AF74B /* video_list.json */,
+				8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */,
+				8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */,
+				8EA5CBE11F0F713F0097A69F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,7 +249,7 @@
 			path = FYPlayerTests;
 			sourceTree = "<group>";
 		};
-		8EA5CBF81F0F71B30097A69F /* FYPlayer */ = {
+		8EA5CBF81F0F71B30097A69F /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				8EA5CC021F0F723B0097A69F /* FYPlayer.h */,
@@ -238,42 +263,26 @@
 				8E6C335D1F38415200BBF938 /* FYSlider.m */,
 				8E406B6D23E3ED51001AF74B /* Player.swift */,
 			);
-			path = FYPlayer;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E1BD0421F1609E700DF46D0 /* FYBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E1BD0481F1609E700DF46D0 /* Build configuration list for PBXNativeTarget "FYBundle" */;
-			buildPhases = (
-				8E1BD03F1F1609E700DF46D0 /* Sources */,
-				8E1BD0401F1609E700DF46D0 /* Frameworks */,
-				8E1BD0411F1609E700DF46D0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FYBundle;
-			productName = FYBundle;
-			productReference = 8E1BD0431F1609E700DF46D0 /* FYBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8EA5CBCC1F0F713F0097A69F /* FYPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA5CBEF1F0F713F0097A69F /* Build configuration list for PBXNativeTarget "FYPlayer" */;
 			buildPhases = (
+				639613D88FD028420EA371CE /* [CP] Check Pods Manifest.lock */,
 				8EA5CBC91F0F713F0097A69F /* Sources */,
 				8EA5CBCA1F0F713F0097A69F /* Frameworks */,
 				8EA5CBCB1F0F713F0097A69F /* Resources */,
 				8E1BD0951F1622F500DF46D0 /* Embed PlugIns */,
+				005578C0EABE15D2859ADF3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8E1BD0931F16225100DF46D0 /* PBXTargetDependency */,
 			);
 			name = FYPlayer;
 			productName = FYPlayer;
@@ -284,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA5CBF21F0F713F0097A69F /* Build configuration list for PBXNativeTarget "FYPlayerTests" */;
 			buildPhases = (
+				87BDEB46454E0A85C46BACC0 /* [CP] Check Pods Manifest.lock */,
 				8EA5CBE21F0F713F0097A69F /* Sources */,
 				8EA5CBE31F0F713F0097A69F /* Frameworks */,
 				8EA5CBE41F0F713F0097A69F /* Resources */,
@@ -307,10 +317,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zhangferry;
 				TargetAttributes = {
-					8E1BD0421F1609E700DF46D0 = {
-						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Automatic;
-					};
 					8EA5CBCC1F0F713F0097A69F = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X36232M6Y9;
@@ -340,30 +346,11 @@
 			targets = (
 				8EA5CBCC1F0F713F0097A69F /* FYPlayer */,
 				8EA5CBE51F0F713F0097A69F /* FYPlayerTests */,
-				8E1BD0421F1609E700DF46D0 /* FYBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8E1BD0411F1609E700DF46D0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E1BD0551F160AC800DF46D0 /* FYPlayer_fullscreen.png in Resources */,
-				8E1BD05D1F160AC800DF46D0 /* FYPlayer_play@3x.png in Resources */,
-				8E1BD05C1F160AC800DF46D0 /* FYPlayer_play@2x.png in Resources */,
-				8E1BD0581F160AC800DF46D0 /* FYPlayer_pause.png in Resources */,
-				8E1BD05A1F160AC800DF46D0 /* FYPlayer_pause@3x.png in Resources */,
-				8E1BD0561F160AC800DF46D0 /* FYPlayer_fullscreen@2x.png in Resources */,
-				8E1BD0591F160AC800DF46D0 /* FYPlayer_pause@2x.png in Resources */,
-				8E1BD05E1F160AC800DF46D0 /* FYPlayer_top_shadow.png in Resources */,
-				8E1BD05B1F160AC800DF46D0 /* FYPlayer_play.png in Resources */,
-				8E1BD0571F160AC800DF46D0 /* FYPlayer_fullscreen@3x.png in Resources */,
-				8E1BD0541F160AC800DF46D0 /* FYPlayer_bottom_shadow.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8EA5CBCB1F0F713F0097A69F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,7 +358,6 @@
 				8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */,
 				8E406B7C23E69FE2001AF74B /* video_list.json in Resources */,
 				8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */,
-				8E1BD0971F16244E00DF46D0 /* FYPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,14 +370,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		8E1BD03F1F1609E700DF46D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		005578C0EABE15D2859ADF3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FYPlayer/Pods-FYPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FYPlayer/Pods-FYPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
+		639613D88FD028420EA371CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FYPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87BDEB46454E0A85C46BACC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FYPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		8EA5CBC91F0F713F0097A69F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +452,7 @@
 				8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */,
 				8E406B6E23E3ED51001AF74B /* Player.swift in Sources */,
 				8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */,
+				8E65887B23F3E79600FA7ACC /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +467,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8E1BD0931F16225100DF46D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E1BD0421F1609E700DF46D0 /* FYBundle */;
-			targetProxy = 8E1BD0921F16225100DF46D0 /* PBXContainerItemProxy */;
-		};
 		8EA5CBE81F0F713F0097A69F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8EA5CBCC1F0F713F0097A69F /* FYPlayer */;
@@ -444,40 +486,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8E1BD0461F1609E700DF46D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = FYBundle/Info.plist;
-				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		8E1BD0471F1609E700DF46D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = FYBundle/Info.plist;
-				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		8EA5CBED1F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -519,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -561,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -570,6 +578,7 @@
 		};
 		8EA5CBF01F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0824BE8138474AB38807D41 /* Pods-FYPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -577,19 +586,21 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
 				INFOPLIST_FILE = FYPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/FYPlayer/FYPlayer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/Application/FYPlayer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8EA5CBF11F0F713F0097A69F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EDEE1D2A59CA4332E06D40 /* Pods-FYPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -597,18 +608,20 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
 				INFOPLIST_FILE = FYPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/FYPlayer/FYPlayer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/Application/FYPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		8EA5CBF31F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED2BE76DEF7C1EB22688F2C /* Pods-FYPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +635,7 @@
 		};
 		8EA5CBF41F0F713F0097A69F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BA95DB1C79C02083C36779 /* Pods-FYPlayerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,15 +650,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E1BD0481F1609E700DF46D0 /* Build configuration list for PBXNativeTarget "FYBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E1BD0461F1609E700DF46D0 /* Debug */,
-				8E1BD0471F1609E700DF46D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8EA5CBC81F0F713F0097A69F /* Build configuration list for PBXProject "FYPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

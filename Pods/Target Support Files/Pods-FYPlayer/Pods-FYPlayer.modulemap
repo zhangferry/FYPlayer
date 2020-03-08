@@ -1,0 +1,6 @@
+framework module Pods_FYPlayer {
+  umbrella header "Pods-FYPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

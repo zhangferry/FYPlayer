@@ -17,7 +17,10 @@ class MainViewController: UIViewController {
         self.title = "Main"
         view.backgroundColor = UIColor.white
 
-        //NSString *path = [[NSBundle mainBundle] pathForResource:@"FYBundle" ofType:@"bundle"];
+        setupUI()
+    }
+    
+    private func setupUI() {
         let videoView = UIView.init(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.width * 9 / 16))
         videoView.backgroundColor = UIColor.lightGray
         view.addSubview(videoView)
@@ -30,7 +33,6 @@ class MainViewController: UIViewController {
         videoModel.videoUrl = URL(string: "http://baobab.wdjcdn.com/14573563182394.mp4")
 
         playerView.player(with: videoView, videoModel: videoModel)
-
     }
     
 

@@ -17,7 +17,7 @@ class VideoListViewController: UIViewController {
     }
     
     private func setupUI() {
-        self.title = "Videos"
+        self.navigationItem.title = "Videos"
     }
     
 
