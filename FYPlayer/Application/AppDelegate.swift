@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainVc.tabBarItem.title = "Main"
         let mainNav = UINavigationController.init(rootViewController: mainVc)
         
-        let videoListVc = VideoListViewController()
+        let viewModel = VideoListViewModel()
+        let videoListVc = VideoListViewController(viewModel: viewModel)
         let videoNav = UINavigationController.init(rootViewController: videoListVc)
         videoNav.tabBarItem.title = "VideoList"
         

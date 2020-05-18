@@ -17,6 +17,12 @@
 		8E406B7C23E69FE2001AF74B /* video_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E406B7B23E69FE1001AF74B /* video_list.json */; };
 		8E65887B23F3E79600FA7ACC /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E65887A23F3E79600FA7ACC /* Configs.swift */; };
 		8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C335D1F38415200BBF938 /* FYSlider.m */; };
+		8E7F9D7F24152F300013B633 /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F9D7E24152F300013B633 /* VideoListTableViewCell.swift */; };
+		8E7F9D822415326C0013B633 /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F9D812415326C0013B633 /* VideoItem.swift */; };
+		8E7F9D86241535DC0013B633 /* VideoListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F9D85241535DC0013B633 /* VideoListUseCase.swift */; };
+		8E9F22232472B8CA0049AC7A /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F22222472B8CA0049AC7A /* VideoListViewModel.swift */; };
+		8E9F22252472B9050049AC7A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F22242472B9050049AC7A /* ViewModelType.swift */; };
+		8E9F22292472BBBD0049AC7A /* TableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F22282472BBBD0049AC7A /* TableViewCell+Ext.swift */; };
 		8EA5CBDD1F0F713F0097A69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */; };
 		8EA5CBE01F0F713F0097A69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5CBDE1F0F713F0097A69F /* LaunchScreen.storyboard */; };
 		8EA5CBEB1F0F713F0097A69F /* FYPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5CBEA1F0F713F0097A69F /* FYPlayerTests.m */; };
@@ -76,6 +82,12 @@
 		8E65887A23F3E79600FA7ACC /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		8E6C335C1F38415200BBF938 /* FYSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSlider.h; sourceTree = "<group>"; };
 		8E6C335D1F38415200BBF938 /* FYSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSlider.m; sourceTree = "<group>"; };
+		8E7F9D7E24152F300013B633 /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
+		8E7F9D812415326C0013B633 /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
+		8E7F9D85241535DC0013B633 /* VideoListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListUseCase.swift; sourceTree = "<group>"; };
+		8E9F22222472B8CA0049AC7A /* VideoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
+		8E9F22242472B9050049AC7A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		8E9F22282472BBBD0049AC7A /* TableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Ext.swift"; sourceTree = "<group>"; };
 		8EA5CBCD1F0F713F0097A69F /* FYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA5CBDC1F0F713F0097A69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA5CBDF1F0F713F0097A69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -163,11 +175,9 @@
 		8E406B7723E54560001AF74B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				8E406B7823E54585001AF74B /* View */,
-				8E406B7123E3F35E001AF74B /* MainViewController.swift */,
-				8E406B7523E54502001AF74B /* VideoListViewController.swift */,
-				8E406B7323E544D5001AF74B /* MusicViewController.swift */,
-				8E406B7923E54689001AF74B /* LiveViewController.swift */,
+				8E7F9D7C24152EE60013B633 /* Main */,
+				8E7F9D7B24152EDF0013B633 /* List */,
+				8E7F9D7D24152EEC0013B633 /* Music */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -175,6 +185,8 @@
 		8E406B7823E54585001AF74B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E7F9D7E24152F300013B633 /* VideoListTableViewCell.swift */,
+				8E406B7523E54502001AF74B /* VideoListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,7 +194,9 @@
 		8E65887823F3E73C00FA7ACC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8E9F22272472BBA60049AC7A /* Extension */,
 				8E65887A23F3E79600FA7ACC /* Configs.swift */,
+				8E9F22242472B9050049AC7A /* ViewModelType.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -194,6 +208,65 @@
 				8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		8E7F9D7B24152EDF0013B633 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8E7F9D84241535B10013B633 /* Model */,
+				8E7F9D83241535810013B633 /* ViewModel */,
+				8E406B7823E54585001AF74B /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8E7F9D7C24152EE60013B633 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E406B7123E3F35E001AF74B /* MainViewController.swift */,
+				8E406B7923E54689001AF74B /* LiveViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E7F9D7D24152EEC0013B633 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				8E406B7323E544D5001AF74B /* MusicViewController.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		8E7F9D802415324D0013B633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E7F9D812415326C0013B633 /* VideoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E7F9D83241535810013B633 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F22222472B8CA0049AC7A /* VideoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E7F9D84241535B10013B633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E7F9D85241535DC0013B633 /* VideoListUseCase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E9F22272472BBA60049AC7A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F22282472BBBD0049AC7A /* TableViewCell+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8EA5CBC41F0F713F0097A69F = {
@@ -224,6 +297,7 @@
 				8E65887823F3E73C00FA7ACC /* Foundation */,
 				8EA5CBF81F0F71B30097A69F /* Source */,
 				8E406B7723E54560001AF74B /* Scene */,
+				8E7F9D802415324D0013B633 /* Model */,
 				8EA5CBD01F0F713F0097A69F /* Supporting Files */,
 			);
 			path = FYPlayer;
@@ -378,12 +452,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FYPlayer/Pods-FYPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,16 +527,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E406B7023E3ED87001AF74B /* AppDelegate.swift in Sources */,
+				8E7F9D822415326C0013B633 /* VideoItem.swift in Sources */,
+				8E7F9D7F24152F300013B633 /* VideoListTableViewCell.swift in Sources */,
 				8EA5CBFE1F0F71D80097A69F /* FYPlayerControlView.m in Sources */,
 				8E406B7623E54502001AF74B /* VideoListViewController.swift in Sources */,
 				8E406B7423E544D5001AF74B /* MusicViewController.swift in Sources */,
 				8E406B7A23E54689001AF74B /* LiveViewController.swift in Sources */,
+				8E7F9D86241535DC0013B633 /* VideoListUseCase.swift in Sources */,
+				8E9F22232472B8CA0049AC7A /* VideoListViewModel.swift in Sources */,
 				8EA5CC011F0F720A0097A69F /* FYVideoModel.m in Sources */,
 				8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */,
 				8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */,
+				8E9F22252472B9050049AC7A /* ViewModelType.swift in Sources */,
 				8E406B6E23E3ED51001AF74B /* Player.swift in Sources */,
 				8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */,
 				8E65887B23F3E79600FA7ACC /* Configs.swift in Sources */,
+				8E9F22292472BBBD0049AC7A /* TableViewCell+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +676,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
 				INFOPLIST_FILE = FYPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,7 +698,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X36232M6Y9;
 				INFOPLIST_FILE = FYPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";

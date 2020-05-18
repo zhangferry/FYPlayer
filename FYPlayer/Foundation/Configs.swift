@@ -16,6 +16,7 @@ struct Configs {
 struct Constraint {
     static let screenHeight = UIScreen.main.bounds.height
     static let screenWidth = UIScreen.main.bounds.width
+    static let edge: CGFloat = 20
     
     static var safeAreaInsets: UIEdgeInsets {
         guard #available(iOS 11.0, *), let keyWindow = UIApplication.shared.keyWindow else {

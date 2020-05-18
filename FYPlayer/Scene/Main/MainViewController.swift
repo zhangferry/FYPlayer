@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
         
         self.title = "Main"
         view.backgroundColor = UIColor.white
+        
+        var set = Set.init([1, 2, 3])
 
         setupUI()
     }

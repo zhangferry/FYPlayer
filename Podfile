@@ -7,6 +7,11 @@ target 'FYPlayer' do
 
   pod 'SnapKit'
   pod 'Masonry'
+  pod 'NSObject+Rx'
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Kingfisher'
 
   target 'FYPlayerTests' do
     inherit! :search_paths
