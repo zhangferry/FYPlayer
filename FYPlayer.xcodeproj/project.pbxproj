@@ -6,9 +6,24 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8E9F23602472CE9E0049AC7A /* Lint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8E9F23632472CE9E0049AC7A /* Build configuration list for PBXAggregateTarget "Lint" */;
+			buildPhases = (
+				8E9F23642472CEC10049AC7A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Lint;
+			productName = Lint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		00096B85B4B5063F025433BA /* Pods_FYPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03B4937B6A8068C0058B5A7 /* Pods_FYPlayer.framework */; };
-		8E406B6E23E3ED51001AF74B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6D23E3ED51001AF74B /* Player.swift */; };
+		8E2FA26A25170FD3002214CA /* PlayerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FA26925170FD3002214CA /* PlayerControl.swift */; };
+		8E406B6E23E3ED51001AF74B /* FYPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6D23E3ED51001AF74B /* FYPlayer.swift */; };
 		8E406B7023E3ED87001AF74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B6F23E3ED87001AF74B /* AppDelegate.swift */; };
 		8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7123E3F35E001AF74B /* MainViewController.swift */; };
 		8E406B7423E544D5001AF74B /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E406B7323E544D5001AF74B /* MusicViewController.swift */; };
@@ -71,8 +86,9 @@
 		8E1BD0511F160AC800DF46D0 /* FYPlayer_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@2x.png"; sourceTree = "<group>"; };
 		8E1BD0521F160AC800DF46D0 /* FYPlayer_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FYPlayer_play@3x.png"; sourceTree = "<group>"; };
 		8E1BD0531F160AC800DF46D0 /* FYPlayer_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYPlayer_top_shadow.png; sourceTree = "<group>"; };
+		8E2FA26925170FD3002214CA /* PlayerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControl.swift; sourceTree = "<group>"; };
 		8E406B6C23E3ED50001AF74B /* FYPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FYPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
-		8E406B6D23E3ED51001AF74B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8E406B6D23E3ED51001AF74B /* FYPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPlayer.swift; sourceTree = "<group>"; };
 		8E406B6F23E3ED87001AF74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E406B7123E3F35E001AF74B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E406B7323E544D5001AF74B /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
@@ -335,7 +351,8 @@
 				8EA5CBFD1F0F71D80097A69F /* FYPlayerControlView.m */,
 				8E6C335C1F38415200BBF938 /* FYSlider.h */,
 				8E6C335D1F38415200BBF938 /* FYSlider.m */,
-				8E406B6D23E3ED51001AF74B /* Player.swift */,
+				8E406B6D23E3ED51001AF74B /* FYPlayer.swift */,
+				8E2FA26925170FD3002214CA /* PlayerControl.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -391,6 +408,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zhangferry;
 				TargetAttributes = {
+					8E9F23602472CE9E0049AC7A = {
+						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = X36232M6Y9;
+						ProvisioningStyle = Automatic;
+					};
 					8EA5CBCC1F0F713F0097A69F = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X36232M6Y9;
@@ -420,6 +442,7 @@
 			targets = (
 				8EA5CBCC1F0F713F0097A69F /* FYPlayer */,
 				8EA5CBE51F0F713F0097A69F /* FYPlayerTests */,
+				8E9F23602472CE9E0049AC7A /* Lint */,
 			);
 		};
 /* End PBXProject section */
@@ -452,7 +475,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FYPlayer/Pods-FYPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${PODS_ROOT}/LookinServer/LookinServer.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -462,7 +487,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -519,6 +546,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8E9F23642472CEC10049AC7A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport LC_CTYPE=en_US.UTF-8\ncd ${SRCROOT}\nxcodebuild -scheme FYPlayer -workspace FYPlayer.xcworkspace clean && xcodebuild -scheme FYPlayer -workspace FYPlayer.xcworkspace -configuration Debug | xcpretty -r json-compilation-database -o compile_commands.json && oclint-json-compilation-database -e Pods -- -report-type xcode\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -530,6 +574,7 @@
 				8E7F9D822415326C0013B633 /* VideoItem.swift in Sources */,
 				8E7F9D7F24152F300013B633 /* VideoListTableViewCell.swift in Sources */,
 				8EA5CBFE1F0F71D80097A69F /* FYPlayerControlView.m in Sources */,
+				8E2FA26A25170FD3002214CA /* PlayerControl.swift in Sources */,
 				8E406B7623E54502001AF74B /* VideoListViewController.swift in Sources */,
 				8E406B7423E544D5001AF74B /* MusicViewController.swift in Sources */,
 				8E406B7A23E54689001AF74B /* LiveViewController.swift in Sources */,
@@ -539,7 +584,7 @@
 				8E6C335E1F38415200BBF938 /* FYSlider.m in Sources */,
 				8E406B7223E3F35E001AF74B /* MainViewController.swift in Sources */,
 				8E9F22252472B9050049AC7A /* ViewModelType.swift in Sources */,
-				8E406B6E23E3ED51001AF74B /* Player.swift in Sources */,
+				8E406B6E23E3ED51001AF74B /* FYPlayer.swift in Sources */,
 				8EA5CBFB1F0F71C60097A69F /* FYPlayerView.m in Sources */,
 				8E65887B23F3E79600FA7ACC /* Configs.swift in Sources */,
 				8E9F22292472BBBD0049AC7A /* TableViewCell+Ext.swift in Sources */,
@@ -576,6 +621,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E9F23612472CE9E0049AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X36232M6Y9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E9F23622472CE9E0049AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X36232M6Y9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8EA5CBED1F0F713F0097A69F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -599,6 +662,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -647,6 +711,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -678,7 +743,7 @@
 				INFOPLIST_FILE = FYPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/Application/FYPlayer-Bridging-Header.h";
@@ -700,7 +765,7 @@
 				INFOPLIST_FILE = FYPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fly.FYPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.FYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FYPlayer/Application/FYPlayer-Bridging-Header.h";
@@ -740,6 +805,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E9F23632472CE9E0049AC7A /* Build configuration list for PBXAggregateTarget "Lint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9F23612472CE9E0049AC7A /* Debug */,
+				8E9F23622472CE9E0049AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8EA5CBC81F0F713F0097A69F /* Build configuration list for PBXProject "FYPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

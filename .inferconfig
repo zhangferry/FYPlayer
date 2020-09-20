@@ -1,0 +1,3 @@
+{
+	"skip-analysis-in-path": ["Pod"]
+}

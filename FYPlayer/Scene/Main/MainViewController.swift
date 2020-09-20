@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainViewController: UIViewController {
 
     var playerView: FYPlayerView!
+    var player: AudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Main"
         view.backgroundColor = UIColor.white
-        
-        var set = Set.init([1, 2, 3])
 
         setupUI()
     }
@@ -32,20 +32,12 @@ class MainViewController: UIViewController {
 
         let videoModel = FYVideoModel()
         videoModel.title = "电影鉴赏"
-        videoModel.videoUrl = URL(string: "http://baobab.wdjcdn.com/14573563182394.mp4")
+        videoModel.videoUrl = URL(string: "https://video.pearvideo.com/mp4/adshort/20200202/cont-1647756-14860863_adpkg-ad_hd.mp4")
 
-        playerView.player(with: videoView, videoModel: videoModel)
+        player = AudioPlayer.init()
+        player.playMedia(with: videoModel.videoUrl)
+        
+        
+//        playerView.player(with: videoView, videoModel: videoModel)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
